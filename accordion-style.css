@@ -1,0 +1,18 @@
+#accordion .card-header{
+	cursor:pointer;
+}
+#accordion .card-header h5{
+	display: inline-block;
+	margin: 0;
+}
+#accordion .card-header h5:before {
+	content: "\f078";
+	font-family: "Font Awesome 5 Free";
+	display: inline-block;
+	transition: all .4s;
+	transform: rotate(360deg);
+	margin-right: 15px;
+}
+#accordion .card-header[aria-expanded="true"] h5:before {
+	transform: rotate(180deg);
+ }
